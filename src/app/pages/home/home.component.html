@@ -1,0 +1,16 @@
+<div  *ngIf="!isLogged">
+  <div class="form-group">
+    <div class="row" id="username">
+      <label for="username">Username</label>
+      <input [(ngModel)]="logins.username" class="form-control" required/>
+    </div>
+    <div class="row" id="password">
+      <label for="password">Password</label>
+      <input [(ngModel)]="logins.password" class="form-control" type ="password" required/>
+    </div>
+    <br>
+    <div class="row">
+      <button (click)="onLogin()" class="btn btn-info">Login</button>
+    </div>
+  </div>
+</div>
